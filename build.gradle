@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories
+{
+    maven
+    {
+        url "https://libraries.minecraft.net"
+    }
+    jcenter()
+    mavenCentral()
+}
+
+dependencies
+{
+    compile group: 'net.bytebuddy', name: 'byte-buddy', version: '1.10.18'
+    compile group: 'net.bytebuddy', name: 'byte-buddy-agent', version: '1.10.18'
+    compile group: 'net.minecraft', name: 'launchwrapper', version: '1.5'
+}
